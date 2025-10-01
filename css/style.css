@@ -1,0 +1,45 @@
+ body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .tree {
+    padding: 10px;
+    display: inline-block;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .folder {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .folder::before {
+    content: "📂 ";
+  }
+
+  .file::before {
+    content: "📄 ";
+  }
+
+  .active::before {
+    content: "➡️ ";
+  }
+
+  li {
+    margin: 4px 0;
+  }
+
+  .master {
+    font-weight: bold;
+  }
+
+  /* Skriveno stanje */
+  .hidden {
+    display: none;
+  }
