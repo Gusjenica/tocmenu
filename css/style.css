@@ -1,46 +1,40 @@
- body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-  }
+body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
 
-  .tree {
-    padding: 10px;
-    display: inline-block;
-  }
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
 
-  ul {
-    list-style-type: none;
-    padding-left: 20px;
-    margin: 0;
-  }
+    li {
+      cursor: pointer;
+      margin: 4px 0;
+      text-transform: uppercase;
+    }
 
-  .folder {
-    cursor: pointer;
-    user-select: none;
-  }
+    .folder::before {
+      content: "📂 ";
+    }
 
-  .folder::before {
-    content: "📂 ";
-  }
+    .file::before {
+      content: "📄 ";
+    }
 
-  .file::before {
-    content: "📄 ";
-  }
+    .nested {
+      display: none;
+    }
 
-  .active::before {
-    content: "➡️ ";
-  }
+    .active {
+      display: block;
+    }
 
-  li {
-    margin: 4px 0;
-    text-transform: uppercase;
-  }
+    a {
+      text-decoration: none;
+      color: darkblue;
+    }
 
-  .master {
-    font-weight: bold;
-  }
-
-  /* Skriveno stanje */
-  .hidden {
-    display: none;
-  }
+    a:hover {
+      text-decoration: underline;
+    }

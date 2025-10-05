@@ -8,89 +8,108 @@
     <link type="text/css" rel="stylesheet" href="../tocmenu/css/style.css">
 </head>
 <body>
-    <div class="tree">
+
+  <!-- TOC MENU Starting -->
     <ul>
-      <li class="folder" onclick="toggleFolder(this)">Početna
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
+      <!-- Početna -->
+      <li class="folder">Početna
+      <ul class="nested">
+        <li class="file"><a href="#">1</a></li>
           <li class="file"><a href="#">2</a></li>
           <li class="file"><a href="#">3</a></li>
           <li class="file"><a href="#">4</a></li>
-        </ul>
+          <li class="file"><a href="#">5</a></li>
+      </ul>
       </li>
 
-      <li class="folder" onclick="toggleFolder(this)">Izvještaj
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
+      <!-- Izvještaj -->
+      <li class="folder">Izvještaj
+      <ul class="nested">
+        <li class="file"><a href="#">Kretanje (Mapa)</a></li>
+          <li class="file"><a href="#">Kretanje (Adrese)</a></li>
+          <li class="file"><a href="#">Kretanje vozila</a></li>
+          <li class="file"><a href="#">Lokacije</a></li>
+          <li class="file"><a href="#">Zaustavljanja</a></li>
+          <li class="file"><a href="#">Parametri</a></li>
+          <li class="file"><a href="#">Gorivo</a></li>
+          <li class="file"><a href="#">Pregled po vozilima</a></li>
+          <li class="file"><a href="#">Detaljni izvleštaj</a></li>
+          <li class="file"><a href="#">Rad mašine</a></li>
+          <li class="file"><a href="#">Analiza po vozilima</a></li>
+          <li class="file"><a href="#">Analiza po danima</a></li>
+          <li class="file"><a href="#">Rad vozila</a></li>
+          <li class="file"><a href="#">Pokrivenost</a></li>
+      </ul>
       </li>
 
-      <li class="folder" onclick="toggleFolder(this)">Vozila
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
+    <!-- Vozila -->
+    <li class="folder">Vozila
+    <ul class="nested">
+      <li class="folder">Vozila
+        <ul class="nested">
+          <li class="file"><a href="#">Promjeni</a></li>
+          <li class="file"><a href="../tocmenu/html/direktni_pristup_vozilima.html">Direktni pristup vozilima</a></li>
+          <li class="file"><a href="#">Toll Hu</a></li>
+          <li class="file"><a href="#">TOll Bg</a></li>
         </ul>
       </li>
-
-      <li class="folder" onclick="toggleFolder(this)">Održavanje
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
-      </li>
-
-      <li class="folder" onclick="toggleFolder(this)">Lokacije
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
-      </li>
-
-      <li class="folder" onclick="toggleFolder(this)">Ovavještenja
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
-      </li>
-
-      <li class="folder" onclick="toggleFolder(this)">Korisnici
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
-      </li>
-
-      <li class="folder" onclick="toggleFolder(this)">Pomoć
-        <ul class="hidden">
-          <!--<li class="file active master"><a href="#">(1</a></li>-->
-          <li class="file"><a href="#">1</a></li>
-          <li class="file"><a href="#">2</a></li>
-          <li class="file"><a href="#">3</a></li>
-          <li class="file"><a href="#">4</a></li>
-        </ul>
-      </li>
+      <li class="file"><a href="../tocmenu/html/vozaci.html">Vozači</a></li>
+      <li class="file"><a href="#">Grupe vozila</a></li>
+      <li class="file"><a href="#">Dnevnik vozila</a></li>
     </ul>
-  </div>
+  </li>
+
+  <!-- Održavanje -->
+      <li class="folder">Održavanje
+      <ul class="nested">
+        <li class="file"><a href="#">Napomena</a></li>
+          <li class="file"><a href="#">Gorivo</a></li>
+          <li class="file"><a href="#">Inventar</a></li>
+          <li class="file"><a href="#">Radni nalog</a></li>
+          <li class="file"><a href="#">Troškovi</a></li>
+          <li class="file"><a href="#">Proizvođači</a></li>
+          <li class="file"><a href="#">Dokumenti</a></li>
+          <li class="file"><a href="#">Kalendar</a></li>
+      </ul>
+      </li>
+
+<!-- Lokacije -->
+     <li class="folder">Lokacije
+    <ul class="nested">
+      <li class="folder">Lokacije
+        <ul class="nested">
+          <li class="file"><a href="#">Nova lokacija</a></li>
+          <li class="file"><a href="#">Grupe</a></li>
+          <li class="file"><a href="#">Ikone</a></li>
+        </ul>
+      </li>
+      <li class="file"><a href="#">Nalog ruta</a></li>
+      <li class="file"><a href="#">Putni nalog</a></li>
+      <li class="file"><a href="#">Službeno putovanje</a></li>
+      <li class="file"><a href="#">Imenik</a></li>
+    </ul>
+  </li>
+
+  <!-- Obavještenja -->
+      <li class="folder">Obavještenja
+      <ul class="nested">
+        <li class="file"><a href="#">Obavještenja</a></li>
+      </ul>
+      </li>
+      
+  <!-- Korisnici -->
+   <li class="folder">Korisnici
+    <ul class="nested">
+      <li class="file"><a href="#">Vaši podaci</a></li>
+      <li class="file"><a href="#">Radnici</a></li>
+    </ul>
+   </li>
+
+
+</ul>
+
+  <!-- TOC MENU ENDING -->
+
 
 <script type="text/javascript" src="../tocmenu/js/script.js"></script>
 </body>

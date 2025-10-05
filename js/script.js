@@ -1,6 +1,11 @@
-function toggleFolder(element) {
-    const sublist = element.querySelector("ul");
-    if (sublist) {
-      sublist.classList.toggle("hidden");
-    }
-  }
+const folders = document.querySelectorAll(".folder");
+
+  folders.forEach(folder => {
+    folder.addEventListener("click", function(e) {
+      e.stopPropagation();
+      let nested = this.querySelector(".nested");
+      if (nested) {
+        nested.classList.toggle("active");
+      }
+    });
+  });
